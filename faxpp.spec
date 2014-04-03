@@ -1,12 +1,12 @@
 #
 # Conditional build:
 %bcond_without	apidocs		# do not build and package API docs
-#
+
 Summary:	Fast XML Pull Parser
 Summary(pl.UTF-8):	Fast XML Pull Parser - szybki analizator XML-a
 Name:		faxpp
 Version:	0.4
-Release:	1
+Release:	2
 License:	Apache v2.0
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/faxpp/%{name}-%{version}.tar.gz
@@ -54,6 +54,9 @@ Statyczna biblioteka faxpp.
 Summary:	faxpp API documentation
 Summary(pl.UTF-8):	Dokumentacja API biblioteki faxpp
 Group:		Documentation
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description apidocs
 API and internal documentation for faxpp library.
