@@ -6,7 +6,7 @@ Summary:	Fast XML Pull Parser
 Summary(pl.UTF-8):	Fast XML Pull Parser - szybki analizator XML-a
 Name:		faxpp
 Version:	0.4
-Release:	2
+Release:	3
 License:	Apache v2.0
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/faxpp/%{name}-%{version}.tar.gz
